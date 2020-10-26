@@ -50,7 +50,7 @@ function TradingCardContainer() {
     fetch('/cards.json')
     .then((reponse) => Response.json())
     .then((data) => updateCards(data))
-  })
+  },[])
   return (<div>{tradingCards}</div>);
 }
 
